@@ -24,9 +24,9 @@ git add .
 git commit -m "%COMMIT_MESSAGE%"
 git branch -M main
 
-:: === PUSH ===
-echo [INFO] Отправка на GitHub...
-git push -u origin main
+:: === ФОРСИРОВАННЫЙ PUSH ===
+echo [INFO] Форсированная загрузка в репозиторий...
+git push --force origin main
 
-echo [ГОТОВО] Сайт загружен на: https://github.com/%GITHUB_USERNAME%/%REPO_NAME%
+echo [ГОТОВО] Загружено на: https://github.com/%GITHUB_USERNAME%/%REPO_NAME%
 pause
